@@ -147,7 +147,9 @@ async def dyno_usage(dyno):
     path = "/accounts/" + user_id + "/actions/get-quota"
     r = requests.get(heroku_api + path, headers=headers)
     if r.status_code != 200:
-        return await dyno.edit("✘ ∫ ↫ خطا:** شي سيء قد حدث **\n" f" ✘ ∫ ↫ `{r.reason}`\n")
+        return await dyno.edit(
+            "✘ ∫ ↫ خطا:** شي سيء قد حدث **\n" f" ✘ ∫ ↫ `{r.reason}`\n"
+        )
     result = r.json()
     quota = result["account_quota"]
     quota_used = result["quota_used"]

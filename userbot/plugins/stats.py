@@ -80,9 +80,7 @@ async def stats(event):
     response += f"`   - رفع مشرفين في القناة : {admin_in_broadcast_channels - creator_in_channels}` \n"
     response += f"**✘ ∫ الرسائل الغـير مقروئه :** {unread} \n"
     response += f"**✘ ∫ الرسائل التي عمل لها غيـر مقروئه :** {unread_mentions} \n"
-    response += (
-        f"**✘ ∫ الوقت المستغرق :** {stop_time:.02f}ثانيه \nٴ⊶─────≺ᴛᴏᴋʏᴏ≻─────⊷"
-    )
+    response += f"**✘ ∫ الوقت المستغرق :** {stop_time:.02f}ثانيه \nٴ⊶─────≺ᴛᴏᴋʏᴏ≻─────⊷"
     await ics.edit(response)
 
 

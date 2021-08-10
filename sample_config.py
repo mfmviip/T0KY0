@@ -30,7 +30,9 @@ class Config(object):
     # get this value from http://www.timezoneconverter.com/cgi-bin/findzone.tzc
     TZ = os.environ.get("TZ", "Asia/Kolkata")
     # set this with required cat repo link
-    UPSTREAM_REPO = os.environ.get("UPSTREAM_REPO", "https://github.com/MFMVIIP/T0KY0.git")
+    UPSTREAM_REPO = os.environ.get(
+        "UPSTREAM_REPO", "https://github.com/MFMVIIP/T0KY0.git"
+    )
 
     # BASIC and MAIN CONFIG VARS
     # for profile default name
